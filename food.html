@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Monsieur+La+Doulaise&family=Reenie+Beanie&family=Rouge+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+        }
         body{
             background-color: lightblue;
         }
@@ -54,31 +58,121 @@
         a:link:active, a:visited:active {
           color: black;
         }
+        li{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        a.c1:hover, a.c1:active{
+            font-size: 150%;
+        }
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+          /* For tablets: */
+          .col-s-1 {width: 8.33%;}
+          .col-s-2 {width: 16.66%;}
+          .col-s-3 {width: 25%;}
+          .col-s-4 {width: 33.33%;}
+          .col-s-5 {width: 41.66%;}
+          .col-s-6 {width: 50%;}
+          .col-s-7 {width: 58.33%;}
+          .col-s-8 {width: 66.66%;}
+          .col-s-9 {width: 75%;}
+          .col-s-10 {width: 83.33%;}
+          .col-s-11 {width: 91.66%;}
+          .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-1 {width: 8.33%;}
+          .col-2 {width: 16.66%;}
+          .col-3 {width: 25%;}
+          .col-4 {width: 33.33%;}
+          .col-5 {width: 41.66%;}
+          .col-6 {width: 50%;}
+          .col-7 {width: 58.33%;}
+          .col-8 {width: 66.66%;}
+          .col-9 {width: 75%;}
+          .col-10 {width: 83.33%;}
+          .col-11 {width: 91.66%;}
+          .col-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 601px) {
+          div.link {
+            font-size: 40px;
+          }
+          div.link1 h1{
+              font-size: 100px;
+          }
+          div.link2 {
+              font-size: 40px;
+          }
+          div.link4 {
+              font-size: 20px;
+          }
+          div.link5 {
+              font-size: 40px;
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          div.link {
+            font-size: 30px;
+          }
+          div.link1 h1{
+              font-size: 70px;
+          }
+          div.link2 {
+              font-size: 20px;
+          }
+          div.link3 img{
+              display: none;
+          }
+          div.link4 ul{
+              font-size: 10px;
+          }
+          div.link5 {
+              font-size: 20px;
+          }
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
     </style>
 </head>
 
 <body>
-    <h1>
-        <img src = "ezgif.com-video-to-gif.gif" width = 130 height = 130>
-        <b>
-        The Dessert Kitchen
-        </b>
-        <img src = "ezgif.com-video-to-gif 2.gif" width = 130 height = 130>
-    </h1>
+    <div class = "link3">
+        <div class = "link1">
+            <h1>
+            <img src = "ezgif.com-video-to-gif.gif" width = 100>
+            <b>
+            The Dessert Kitchen
+            </b>
+            <img src = "ezgif.com-video-to-gif 2.gif" width = 100>
+            </h1>
+        </div>
+    </div>
     <p class = "center">
         All new springtime stunners for treating yourself, or anyone you <i class = "fa fa-heart"></i>
     </p>
     <br>
     <p>
         <h3>
-            <a href = "food.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "offer.html">Offers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "about.html">About</a>
+            <a class = "c1" href = "food.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class = "c1" href= "offer.html">Offers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class ="c1" href= "about.html">About</a>
         </h3>
         <h3>
             MENU
         </h3>
         <br> <br>
         <h2>
-            Cookies <img src = "ezgif.com-video-to-gif 4.gif" width = "50">
+            <div class = "link3">
+                <div class = "link2">
+                    Cookies <img src = "ezgif.com-video-to-gif 4.gif" width = "50">
+                </div>
+            </div>
         </h2>
         <br> <br>
         <ul>
@@ -115,7 +209,11 @@
         </ul>
         <br> <br>
         <h2>
-            Ice Cream <img src = "ezgif.com-video-to-gif 5.gif" width = "70">
+            <div class = "link3">
+                <div class = "link2">
+                    Ice Cream <img src = "ezgif.com-video-to-gif 5.gif" width = "70">
+                </div>
+            </div>
         </h2>
         <br> <br>
         <ul>
@@ -152,7 +250,11 @@
         </ul>
         <br> <br>
         <h2>
-            Coffee <img src = "ezgif.com-video-to-gif 6.gif" width = "80">
+            <div class = "link3">
+                <div class = "link2">
+                    Coffee <img src = "ezgif.com-video-to-gif 6.gif" width = "80">
+                </div>
+            </div>
         </h2>
         <ul>
             <li>
@@ -188,13 +290,15 @@
         </ul>
     </p>
     <h3>
+        <div class = "link5">
         Contact us : 9829443333 <i class = "fa fa-phone"></i>
         <br>
-        <a href = "mailto:2020kucp1127@iiitkota.ac.in"><i class= "fa fa-google-plus"></i></a>
+        <a class = "c1" href = "mailto:2020kucp1127@iiitkota.ac.in"><i class= "fa fa-google-plus"></i></a>
         &nbsp;
-        <a href = "https://www.instagram.com/snowy_nishu/"><i class = "fa fa-instagram"></i></a>
+        <a class = "c1" href = "https://www.instagram.com/snowy_nishu/"><i class = "fa fa-instagram"></i></a>
         &nbsp;
-        <a href = "https://twitter.com/snowy_nishu"><i class= "fa fa-twitter"></i></a>
+        <a class = "c1" href = "https://twitter.com/snowy_nishu"><i class= "fa fa-twitter"></i></a>
+        </div>
     </h3>
 </body>
 </html>
