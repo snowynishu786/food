@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
+            padding: ;
             box-sizing: border-box;
         }
         body{
@@ -65,6 +66,9 @@
         a.c1:hover, a.c1:active{
             font-size: 150%;
         }
+        img {
+            align-items: center;
+        }
         /* For mobile phones: */
         [class*="col-"] {
           width: 100%;
@@ -109,16 +113,31 @@
           div.link2 {
               font-size: 40px;
           }
+          div.link4 {
+              font-size: 20px;
+          }
+          div.link5 {
+              font-size: 40px;
+          }
         }
         @media only screen and (max-width: 600px) {
           div.link {
             font-size: 30px;
           }
           div.link1 h1{
-              font-size: 20px;
+              font-size: 50px;
           }
           div.link2 {
-              font-size: 30px;
+              font-size: 20px;
+          }
+          div.link3 img{
+              display: none;
+          }
+          div.link4 {
+              font-size: 10px;
+          }
+          div.link5 {
+              font-size: 20px;
           }
         }
         img {
@@ -130,11 +149,15 @@
 <body>
     <div class = "link1">
         <h1>
+        <div class = "link3">
         <img src = "ezgif.com-video-to-gif.gif" width = 100>
+        </div>
         <b>
         The Dessert Kitchen
         </b>
+        <div class = "link3">
         <img src = "ezgif.com-video-to-gif 2.gif" width = 100>
+        </div>
         </h1>
     </div>
     <p class = "center">
@@ -156,6 +179,7 @@
     <br>
     <img src = "ezgif.com-video-to-gif 7.gif" width = "200" align = "center">
     <br>
+    <div class = "link4">
     <ul>
         <li>
             <b>50%</b> off on Fortune Cookies
@@ -171,14 +195,15 @@
             Offer Timings -> Mon-Wed: 1:00 PM - 4:00 PM
         </li>
     </ul>
+    </div>
     <br>
     <h2>
-        <div class = "link">
+        <div class = "link5">
         <b>Daily New Offers!!</b>
         </div>
     </h2>
     <h3>
-        <div class = "link">
+        <div class = "link5">
         Contact us : 9829443333 <i class = "fa fa-phone"></i>
         <br>
         <a class = "c1" href = "mailto:2020kucp1127@iiitkota.ac.in"><i class= "fa fa-google-plus"></i></a>
